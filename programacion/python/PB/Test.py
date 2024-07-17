@@ -27,3 +27,5 @@ while 0==0:
         break
     else:
         print("La operacion que elegiste no es valida.")
+
+#salu3 internautas
