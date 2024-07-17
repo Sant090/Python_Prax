@@ -1,4 +1,5 @@
 from test import Rg
+from ID import Aid
 
 def Dp():
     Name = input("What is your name? ")
@@ -11,6 +12,7 @@ def Dp():
         "pais": Country,
         "genero": Gender
     }
+    id=Aid()
     Rg(Name,Age,Country,Gender)
     return (i)
 
