@@ -1,4 +1,4 @@
-class estudiante:
+"""class estudiante:
     def __init__(self,nombre,edad,grado):
         self.nombre= nombre
         self.edad= edad
@@ -18,3 +18,14 @@ while True:
     a=input("")
     if (a.lower()=="estudiar"):
         est1.estudiar()
+    break
+
+class universitario(estudiante):
+    def __init__(self,nombre,edad,grado):
+        estudiante.__init__(self,nombre,edad,grado)
+
+jorge=universitario("jorge",11,22)
+
+jorge.estudiar()
+
+"""
