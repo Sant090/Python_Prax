@@ -29,6 +29,9 @@ jorge=universitario("jorge",11,22)
 jorge.estudiar()
 
 """
+
+
+"""
 class persona:
     def __init__(self,nombre,edad):
         self.nombre=nombre
@@ -52,3 +55,34 @@ sergio=estudiante("sergio","12","quinto")
 sergio.SeeName()
 sergio.SeeAge()
 sergio.SeeGrado()
+
+"""
+
+
+class animal:
+    def __init__(self):
+        pass
+    def comer(self):
+        print(f"el animal esta comiendo")
+
+class mamifero(animal):
+    def __init__(self):
+        pass
+    def amamantar(self):
+        print(f"el animal esta amamantando")
+
+class ave(animal):
+    def __init__(self):
+        pass
+    def volar(self):
+        print(f"el animal esta volando")
+
+class murcielago(mamifero,ave):
+    def __init__(self):
+        pass
+
+mr=murcielago()
+mr.comer()
+mr.amamantar()
+mr.volar()
+    
