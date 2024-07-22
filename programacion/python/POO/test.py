@@ -29,3 +29,26 @@ jorge=universitario("jorge",11,22)
 jorge.estudiar()
 
 """
+class persona:
+    def __init__(self,nombre,edad):
+        self.nombre=nombre
+        self.edad=edad
+    def SeeName(self):
+        print(f"{self.nombre}")
+    def SeeAge(self):
+        print(f"{self.edad}")
+class estudiante(persona):
+    def __init__(self,nombre,edad,grado):
+        persona.__init__(self,nombre,edad)
+        self.grado=grado
+    def SeeGrado(self):
+        print(f"{self.grado}")
+
+santiago=persona("santiago","11")
+santiago.SeeName()
+santiago.SeeAge()
+
+sergio=estudiante("sergio","12","quinto")
+sergio.SeeName()
+sergio.SeeAge()
+sergio.SeeGrado()
